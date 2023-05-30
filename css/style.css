@@ -1,0 +1,201 @@
+/* Globala stilar */
+
+/* Ange typsnittsfamiljen för hela sidan */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Ange bakgrundsfärgen till svart */
+    background-color: #000;
+    /* Ange textfärgen till vit */
+    color: #fff;
+    /* Ta bort marginalen runt kroppen */
+    margin: 0;
+    /* Ta bort inre utfyllnad inom kroppen */
+    padding: 0;
+}
+
+/* Definiera en containerklass */
+
+/* Sätt den maximala bredden på containern till 800px */
+.container {
+    max-width: 800px;
+    /* Centrera containern horisontellt */
+    margin: 0 auto;
+    /* Lägg till 20px utfyllnad runt containern */
+    padding: 20px;
+}
+
+/* Stilar för h1-elementet */
+h1 {
+    /* Centrera texten horisontellt */
+    text-align: center;
+    /* Ange typsnittsstorlek till 36px */
+    font-size: 36px;
+    /* Lägg till 20px marginal överst */
+    margin-top: 20px;
+    /* Ange textfärgen till vit */
+    color: #fff;
+}
+
+/* Stilar för h2-elementet */
+h2 {
+    /* Centrera texten horisontellt */
+    text-align: center;
+    /* Ange typsnittsstorlek till 24px */
+    font-size: 24px;
+    /* Lägg till 10px marginal nedanför */
+    margin-bottom: 10px;
+    /* Ange textfärgen till vit */
+    color: #fff;
+}
+
+/* Input-container */
+#input-container {
+    /* Centrera innehållet horisontellt */
+    text-align: center;
+    /* Lägg till 50px marginal överst */
+    margin-top: 50px;
+    /* Lägg till 20px utfyllnad runt innehållet */
+    padding: 20px;
+}
+
+/* Stilar för player-name-input-elementet */
+#player-name-input {
+    /* Lägg till 10px utfyllnad runt input-elementet */
+    padding: 10px;
+    /* Ange typsnittsstorlek till 16px */
+    font-size: 16px;
+}
+
+/* Stilar för start-game-btn-knappen */
+#start-game-btn {
+    /* Lägg till 10px utfyllnad på toppen och botten samt 20px på sidorna */
+    padding: 10px 20px;
+    /* Ange typsnittsstorlek till 16px */
+    font-size: 16px;
+    /* Ange bakgrundsfärgen till #ffcc00 */
+    background-color: #ffcc00;
+    /* Ange textfärgen till svart */
+    color: #000;
+    /* Ta bort kantlinjen */
+    border: none;
+    /* Visa pekaren som en hand när man håller över knappen */
+    cursor: pointer;
+    /* Lägg till 10px marginal överst */
+    margin-top: 10px;
+    /* Lägg till en övergångseffekt för bakgrundsfärgen */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-effekt för start-game-btn-knappen */
+#start-game-btn:hover {
+    /* Ändra bakgrundsfärgen till #ffc200 när man håller över knappen */
+    background-color: #ffc200;
+}
+
+/* Spelcontainer */
+#game-container {
+    /* Dölj spelcontainern som standard */
+    display: none;
+    /* Lägg till 50px marginal överst */
+    margin-top: 50px;
+    /* Lägg till 20px utfyllnad runt innehållet */
+    padding: 20px;
+    /* Ange bakgrundsfärgen till #222 */
+    background-color: #222;
+    /* Lägg till en skugga runt spelcontainern */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    /* Avrunda hörnen på spelcontainern med 6px radie */
+    border-radius: 6px;
+}
+
+/* Stilar för score-container */
+#score-container {
+    /* Använd flexbox för att placera elementen jämnt fördelade */
+    display: flex;
+    /* Justera innehållet så att det är jämnt fördelat mellan elementen */
+    justify-content: space-between;
+    /* Lägg till 20px marginal nedanför */
+    margin-bottom: 20px;
+}
+
+/* Stilar för resultatet */
+#result {
+    /* Centrera texten horisontellt */
+    text-align: center;
+    /* Ange typsnittsstorlek till 18px */
+    font-size: 18px;
+    /* Lägg till 20px marginal överst */
+    margin-top: 20px;
+    /* Ange textfärgen till vit */
+    color: #fff;
+}
+
+/* Stilar för restart-game-btn-knappen */
+#restart-game-btn {
+    /* Dölj knappen som standard */
+    display: none;
+    /* Centrera knappen horisontellt */
+    margin: 20px auto 0;
+    /* Lägg till 10px utfyllnad på toppen och botten samt 20px på sidorna */
+    padding: 10px 20px;
+    /* Ange typsnittsstorlek till 16px */
+    font-size: 16px;
+    /* Ange bakgrundsfärgen till #ffcc00 */
+    background-color: #ffcc00;
+    /* Ange textfärgen till svart */
+    color: #000;
+    /* Ta bort kantlinjen */
+    border: none;
+    /* Visa pekaren som en hand när man håller över knappen */
+    cursor: pointer;
+    /* Lägg till en övergångseffekt för bakgrundsfärgen */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-effekt för restart-game-btn-knappen */
+#restart-game-btn:hover {
+    /* Ändra bakgrundsfärgen till #ffc200 när man håller över knappen */
+    background-color: #ffc200;
+}
+
+/* Stilar för choices-container */
+#choices-container {
+    /* Använd flexbox för att centrera elementen horisontellt */
+    display: flex;
+    /* Centrera innehållet horisontellt */
+    justify-content: center;
+    /* Lägg till 20px mellanrum mellan elementen */
+    gap: 20px;
+}
+
+/* Stilar för alla knappar */
+button {
+    /* Lägg till 15px utfyllnad på toppen och botten samt 30px på sidorna */
+    padding: 15px 30px;
+    /* Ange typsnittsstorlek till 18px */
+    font-size: 18px;
+    /* Ange bakgrundsfärgen till #ffcc00 */
+    background-color: #ffcc00;
+    /* Ange textfärgen till svart */
+    color: #000;
+    /* Ta bort kantlinjen */
+    border: none;
+    /* Visa pekaren som en hand när man håller över knappen */
+    cursor: pointer;
+    /* Lägg till en övergångseffekt för bakgrundsfärgen */
+    transition: background-color 0.3s ease;
+}
+
+
+/* Ändrar bakgrundsfärgen när muspekaren svävar över knappen */
+button:hover {
+    background-color: #ffc200;
+}
+
+/* Stilmall för player-score och computer-score */
+#player-score,
+#computer-score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
